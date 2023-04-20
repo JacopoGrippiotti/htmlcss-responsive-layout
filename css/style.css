@@ -124,7 +124,7 @@ ul{
 }
 
 .section{
-    padding: 30px 30px;
+    padding: 30px 30px 30px 30px;
 }
 /*UTILITIES*/
 
@@ -183,12 +183,35 @@ nav{
 .apple-button{
     width: 73%;
     padding: 11px 15px;
+    max-width: 220px;
+    min-width: 200px;
 }
 
 /*MEDIA QUERY*/
 
+@media screen and (min-width:670px){
+    .big-card{
+        width: calc((100% / 3) * 2 - 14px );
+    }
+    
+    .card{
+        width: calc((100% / 3) - 14px);
+    }
 
-@media screen and (min-width:768px){
+    .web-design-card{
+        margin-left: 0;
+    }
+
+    .gap{
+        column-gap: 3%;
+    }
+
+    .phone-image{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:780px){
     
     nav>div.logo-container{
         width: 20%;
@@ -202,10 +225,6 @@ nav{
         display: flex;
     }
 
-    .container{
-        width: 90%;
-    }
-
     .mobile-tablet-icon-container{
         display: none;
     }
@@ -214,13 +233,42 @@ nav{
         justify-content: flex-end;
     }
 
+    .container{
+        width: 80%;
+    }
 
+    .gap{
+        column-gap: 2%;
+    }
+
+    .big-card-description{
+        width: 40%;
+    }
+
+    .big-card-image{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .phone-image{
+        width: 90%;
+    }
+
+    .card{
+        width: calc((100% / 3) - 25px);
+       }
+    
+    .big-card{
+        width: calc((100% / 3) * 2 - 25px );
+    }
+
+    .phone-image{
+        min-width: 150px;
+    }
 }
 
-@media screen and (min-width:1300px){
-   .container{
-    width: 80%;
-   }
+@media screen and (min-width:1400px){
 
    nav>div.logo-container{
     width: 50%;
@@ -229,4 +277,22 @@ nav{
    nav>div.nav-options{
     width: 50%;
    }
+
+   .card{
+    width: calc((100% / 3) - 25px);
+   }
+
+   .big-card{
+    width: calc((100% / 3) * 2 - 25px );
+   }
+
+   .phone-image{
+    width: 60%;
+   }
+
+   .big-card-image{
+    margin-top: 40px;
+   }
+    
 }
+
