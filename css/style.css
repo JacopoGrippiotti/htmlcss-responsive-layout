@@ -9,3 +9,13 @@
 .bg-white{
     background-color: white;
 }
+
+.bg-blue{
+    background-color: #0084fd;
+}
+
+/*GENERAL CLASSES*/
+ul{
+    list-style-type: none;
+    padding-left: 20px;
+}
