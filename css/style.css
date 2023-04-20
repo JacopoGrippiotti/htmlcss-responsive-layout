@@ -89,8 +89,11 @@ ul{
     margin-top: 20px;
     background-color:#b5ddff;
     border-radius: 25px;
-    padding: 10px 35px 0px 35px;
-    color: #526678;
+    padding: 10px 25px 0px 25px;
+    text-align: center;
+    color: #526678; 
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .card>p{
@@ -103,6 +106,21 @@ ul{
     font-size: 1.7rem;
     color: #0084fd;
     text-align: center;
+}
+
+.card>i{
+    font-size: 4rem;
+    margin-top: 10px;
+    color: #0084fd;
+}
+
+.card>h3,
+.card>p{
+    margin-top: 25px;
+}
+
+.card>p{
+    margin-bottom: 25px;
 }
 
 .section{
