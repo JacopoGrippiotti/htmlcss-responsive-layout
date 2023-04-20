@@ -26,7 +26,7 @@ ul{
 }
 
 .container{
-    width: 62%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -58,21 +58,73 @@ ul{
 
 /*SECTIONS CLASSES*/
 
-nav>div{
-    width: 48%;
+.nav-options>ul{
+    display: none;
 }
 
-
 nav ul>li{
-    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav>ul{
+    display: none;
 }
 
 nav{
-    font-size: 0.95rem;
     color: white;
-    padding: 10px 0px;
+    padding: 10px 30px;
 }
 
 .logo-img{
-    width: 11%;
+    height: 100%;
+}
+
+.mobile-tablet-icon{
+    font-size: 2rem;
+}
+
+/*MEDIA QUERY*/
+
+
+@media screen and (min-width:768px){
+    
+    nav>div.logo-container{
+        width: 20%;
+    }
+
+    nav>div.nav-options{
+        width: 80%;
+    }
+
+    .nav-options>ul{
+        display: flex;
+    }
+
+    .container{
+        width: 768px;
+    }
+
+    .mobile-tablet-icon-container{
+        display: none;
+    }
+
+    .nav-options{
+        justify-content: flex-end;
+    }
+
+
+}
+
+@media screen and (min-width:1300px){
+   .container{
+    width: 80%;
+   }
+
+   nav>div.logo-container{
+    width: 50%;
+   }
+
+   nav>div.nav-options{
+    width: 50%;
+   }
 }
