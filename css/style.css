@@ -287,16 +287,29 @@ section.testimonials p{
 /*WORKING BENEFITS*/
 section.working-benefits .card{
     text-align: left;
-    padding: 10px 20px;
+    padding: 15px 20px;
 }
 
 section.working-benefits .card p{
     text-align: left;
+    font-weight: lighter;
 }
 
 section.working-benefits .card div.button{
     text-align: center;
     width: 30%;
+    font-size: 0.80rem;
+    padding: 8px 10px;
+}
+
+section.working-benefits h2{
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+
+section.working-benefits h3{
+    font-size: 2.8rem;
+    color: white;
 }
 /*MEDIA QUERY*/
 
