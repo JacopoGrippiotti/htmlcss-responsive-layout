@@ -18,8 +18,8 @@
     background-color: #b5ddff;;
 }
 
-.bg-dark-blue{
-
+.text-violet{
+    color: #9792e4;
 }
 
 .text-black{
@@ -137,6 +137,14 @@ ul{
 .card-image{
     width: 95%;
 }
+
+.round-image{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
 /*UTILITIES*/
 
 .flex-wrap{
@@ -169,6 +177,9 @@ ul{
     border-radius: 40px;
 }
 
+.margin-auto{
+    margin: auto;
+}
 /*SECTIONS CLASSES*/
 
 /* NAV SECTION */
@@ -220,9 +231,9 @@ nav{
     color: black;
     font-style: italic;
     font-weight: lighter;
-    font-size: 0.90rem;
+    font-size: 1rem;
     margin-top: 10px;
-    padding: 0px 30px;
+    padding: 0px 40px;
 }
 section.strategic-planning div.card:first-child>h3,
 section.strategic-planning div.card:first-child>p{
@@ -232,7 +243,7 @@ section.strategic-planning div.card:first-child>p{
 }
 
 section.strategic-planning div.card:first-child>h3{
-    margin-top: 30%;
+    margin-top: 23%;
     font-size: 2.2rem;
 }
 
@@ -241,6 +252,18 @@ section.strategic-planning div.card:first-child>p{
     font-weight: lighter;
 }
 
+/*TESTIMONIALS*/
+
+section.testimonials span:nth-child(1){
+    font-size: 2rem;
+    font-style: italic;
+    vertical-align: bottom;
+}
+
+section.testimonials span:nth-child(2){
+    vertical-align: text-top;
+    font-size: 2rem;
+}
 
 /*MEDIA QUERY*/
 
@@ -265,14 +288,18 @@ section.strategic-planning div.card:first-child>p{
         width: 70%;
     }
 
-    section.strategic-planning .card{
+    section.strategic-planning .card,
+    section.testimonials .card{
         width: 100%;
     }
 
+    section.testimonials .testimonial-card>div{
+        width: 50%;
+    }
 }
 
 @media screen and (min-width:770px){
-    
+
     nav>div.logo-container{
         width: 20%;
     }
@@ -333,6 +360,10 @@ section.strategic-planning div.card:first-child>p{
         margin-top: 18%;
         width: 30%;
     }
+
+    section.testimonials .testimonial-card>div{
+        width: 50%;
+    }
 }
 
 @media screen and (min-width:1400px){
@@ -368,7 +399,7 @@ section.strategic-planning div.card:first-child>p{
    }
 
    .card{
-    padding: 10px 35px 0px 35px;
+    padding: 10px 30px 10px 30px;
    }
 
    .container{
