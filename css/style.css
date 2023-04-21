@@ -135,7 +135,7 @@ ul{
 }
 
 .card-image{
-    width: 100%;
+    width: 90%;
 }
 /*UTILITIES*/
 
@@ -159,6 +159,10 @@ ul{
 
 .align-center{
     align-items: center;
+}
+
+.text-left{
+    text-align: left;
 }
 
 /*SECTIONS CLASSES*/
@@ -201,6 +205,26 @@ nav{
     max-width: 220px;
     min-width: 120px;
 }
+
+/*STRATEGIC_PLANNING*/
+.development-card>h4{
+    font-weight: bold;
+    color: black;
+}
+
+.development-card>p{
+    color: black;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+section.strategic-planning div.card:first-child>h3,
+section.strategic-planning div.card:first-child>p{
+    text-align: left;
+    color: white;
+}
+
 
 /*MEDIA QUERY*/
 
