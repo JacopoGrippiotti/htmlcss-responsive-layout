@@ -311,6 +311,52 @@ section.working-benefits h3{
     font-size: 2.8rem;
     color: white;
 }
+
+/*ABOUT US*/
+.about-us-left,
+.about-us-right{
+    width: 100%;
+}
+
+section.about-us{
+    padding: 20px;
+}
+
+.about-us h1{
+    font-size: 4rem;
+    margin-top: 30px;
+}
+
+.about-us p{
+    font-size: 0.90rem;
+    line-height: 2rem;
+}
+
+.about-us-left p{
+    margin-top: 40px;
+}
+
+.about-us-right{
+    margin-top: 40px;
+    padding: 0px 20px 10px 0px ;
+}
+
+.about-us-left p{
+    color: black;
+}
+.about-us-right p{
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+.about-us div.button{
+    text-align: left;
+    width: 50%;
+    margin-top: 20px;
+    min-width: 180px;
+    max-width: 220px;
+}
 /*MEDIA QUERY*/
 
 @media screen and (min-width:570px){
@@ -349,6 +395,18 @@ section.working-benefits h3{
 
     section.working-benefits .card{
         width: calc((100% / 2) - 20px);
+    }
+
+    .about-us-left{
+     width: 55%;
+    }
+
+    .about-us-right{
+        width: 40%;
+    }
+
+    .about-us-right p{
+        padding-right: 5px;
     }
 }
 
@@ -425,6 +483,23 @@ section.working-benefits h3{
 
     section.working-benefits .card{
         width: calc((100% / 3) - 20px);
+    }
+
+    .about-us-left{
+        width: 60%;
+    }
+        
+   
+    .about-us-right{
+           width: 35%;
+    }
+    
+    .about-us-left p{
+        padding-right: 30px;
+    }
+
+    .about-us-right p{
+        padding-right: 30px;
     }
 }
 
